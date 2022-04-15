@@ -13,7 +13,7 @@ A collection of example notebooks that demonstrate the use of Big Data Toolkit 3
 
 ### Install Apache Spark
 
-ArcGIS Pro includes a built-in Spark runtime but you will need to install a separate Spark environment for BDT as the built-in Spark is missing librarie that BDT expects.
+ArcGIS Pro includes a built-in Spark runtime but you will need to install a separate Spark environment for BDT as the built-in Spark is missing libraries that BDT expects.
 
 1. Download [spark-3.2.1-bin-hadoop3.2.tgz](https://www.apache.org/dyn/closer.lua/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz), which is the most recent stable version of Spark at the time of writing. Newer versions of Spark 3.2+ might also work. BDT will not work with Spark 3.1 without modification. If you need to use Spark 3.1, for example, because you are relying on AWS EMR, you will need a special build of BDT. 
 
@@ -34,13 +34,13 @@ conda create --yes --name bdt3 --clone arcgispro-py3
 proswap bdt3
 ```
 
-6. Define the `PYSPARK_PYTHON` system environment variable and point to the location of your bdt3 Conda environment, e.g., `C:\Users\%USERNAME%\AppData\Local\ESRI\conda\envs\spark_esri2\python.exe`.
+6. Define the `PYSPARK_PYTHON` system environment variable and point it to the location of your bdt3 Conda environment, e.g., `C:\Users\%USERNAME%\AppData\Local\ESRI\conda\envs\spark_esri2\python.exe`.
 
 ### Install the Spark Esri module.
 
 This Python module provides convenience functions for working with Spark from ArcGIS Pro. 
 
-7. Clone the Spark Esri GitHub repository and install it into the `bdt3` conda environment by running these commands from the Python command prompt, making sure that `bdt` is the active conda environment. It doesn't really matter where you clone the repository. The following commands wlll clone it into a folder called `repos` in the user's home directory. You can change this location to your liking.
+7. Clone the Spark Esri GitHub repository and install it into the `bdt3` conda environment by running these commands from the Python command prompt, making sure that `bdt3` is the active conda environment. It doesn't really matter where you clone the repository. The following commands wlll clone it into a folder called `repos` in the user's home directory. You can change this location to your liking.
 
 ```commandline
 mkdir ~\repos
