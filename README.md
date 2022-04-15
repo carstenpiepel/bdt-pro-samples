@@ -40,7 +40,7 @@ proswap bdt3
 
 This Python module provides convenience functions for working with Spark from ArcGIS Pro. 
 
-7. Clone the Spark Esri GitHub repository and install it into the `bdt3` conda environment. It doesn't really matter where you clone the repository. The following commands wlll clone it into a folder called `repos` in the user's home directory. You can change this location to your liking. Make sure you execute the last line which will actually install the module into the conda environment.
+7. Clone the Spark Esri GitHub repository and install it into the `bdt3` conda environment by running these commands from the Python command prompt, making sure that `bdt` is the active conda environment. It doesn't really matter where you clone the repository. The following commands wlll clone it into a folder called `repos` in the user's home directory. You can change this location to your liking.
 
 ```commandline
 mkdir ~\repos
